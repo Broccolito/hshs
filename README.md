@@ -120,6 +120,8 @@ No portraits, account credentials, external servers, hooks or background service
 
 ## Development and verification
 
+On September 28, 2026, installation from this public GitHub marketplace succeeded with Codex CLI 0.157.0. A fresh Codex session loaded the installed hshs skill, correctly summarized the teeth, symmetry, text, lighting and drift rules, and confirmed an image editing tool was available. Plugin and skill structural validators passed. This was an installation and instruction-loading smoke test; it did not generate a new portrait or certify visual output quality.
+
 The plugin manifest and skill can be validated with the plugin-creator and skill-creator validators bundled with Codex. Structural validation does not prove visual quality; inspect actual outputs. Useful smoke checks include conversion-only (no retouch), skin-only (no reshaping), requested symmetry (retain head perspective), and a follow-up hair edit (retain earlier accepted changes).
 
 When editing an installed copy's source, follow plugin-creator's cachebuster and reinstall workflow, then start a new chat. Keep the distributable folder free of personal photographs.
