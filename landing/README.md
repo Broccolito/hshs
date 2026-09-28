@@ -1,6 +1,6 @@
 # hshs landing page
 
-Public URL: https://broccolito.github.io/hshs/
+Public URL: https://broccolito.github.io/hshs-skill/
 
 This folder contains the GitHub Pages website: two before-and-after sliders, simple fade-in animations and an installation prompt users can copy into Codex. It uses plain HTML, CSS and JavaScript, with no build step, tracking, cookies or remote fonts.
 
@@ -12,7 +12,7 @@ From the repository root:
 python3 -m http.server 8765 --directory landing
 ```
 
-Open http://localhost:8765. The page uses relative asset paths so it also works at the GitHub Pages `/hshs/` subpath. Clipboard copy needs HTTPS or localhost; an accessible text-selection fallback is provided.
+Open http://localhost:8765. The page uses relative asset paths so it also works at the GitHub Pages `/hshs-skill/` subpath. Clipboard copy needs HTTPS or localhost; an accessible text-selection fallback is provided.
 
 ## Images
 
@@ -33,5 +33,5 @@ The comparisons use native range controls: drag or tap, or focus them with Tab a
 - Check both comparisons at 0%, 50% and 100%; images must keep their geometry.
 - Confirm installation prompt copy and its fallback, GitHub/ZIP links, and keyboard controls.
 - Check mobile single-column and desktop two-column layouts, readable text and reduced motion.
-- Check that assets load through the deployed `/hshs/` path.
+- Check that assets load through the deployed `/hshs-skill/` path.
 - Keep fictional-person disclosure visible and never exaggerate the originals' imperfections.

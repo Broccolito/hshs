@@ -2,7 +2,7 @@
 
 **Beauty comes first. Retouching follows.**
 
-[Explore the before-and-after demonstrations →](https://broccolito.github.io/hshs/)
+[Explore the before-and-after demonstrations →](https://broccolito.github.io/hshs-skill/)
 
 The website and fictional East Asian portrait examples are in [`landing/`](landing/).
 
@@ -29,7 +29,7 @@ Use a Codex environment with image viewing and image editing tools enabled. This
 
 Copy and paste this into Codex:
 
-> Install the hshs plugin from https://github.com/Broccolito/hshs. Read its README, add its GitHub marketplace, install hshs@hshs-marketplace, and verify that the plugin is installed and its hshs skill is available. Preserve my other plugins and settings. Tell me if I need to open a new chat.
+> Install the hshs plugin from https://github.com/Broccolito/hshs-skill. Read its README, add its GitHub marketplace, install hshs@hshs-marketplace, and verify that the plugin is installed and its hshs skill is available. Preserve my other plugins and settings. Tell me if I need to open a new chat.
 
 The repository is public. No repository invitation or GitHub token is required to read it. Installation still requires a Codex version with plugin support and permission to install plugins. Image editing additionally requires image tools in your Codex session; installing this instruction package does not grant those tools.
 
@@ -38,7 +38,7 @@ The repository is public. No repository invitation or GitHub token is required t
 Codex can run these for you, or you can run them in a terminal:
 
 ```sh
-codex plugin marketplace add https://github.com/Broccolito/hshs.git
+codex plugin marketplace add https://github.com/Broccolito/hshs-skill.git
 codex plugin add hshs@hshs-marketplace
 codex plugin list
 ```
@@ -68,7 +68,7 @@ Start a new chat after updates. To uninstall, run `codex plugin remove hshs@hshs
 
 ### Install from a downloaded copy
 
-Unzip or clone the repository, then run `codex plugin marketplace add /absolute/path/to/hshs` followed by `codex plugin add hshs@hshs-marketplace`. The path must be the repository root containing `.agents/plugins/marketplace.json`, not the nested plugin folder. This uses the same catalog name; do not register both local and GitHub sources with that name at once.
+Unzip or clone the repository, then run `codex plugin marketplace add /absolute/path/to/hshs-skill` followed by `codex plugin add hshs@hshs-marketplace`. The path must be the repository root containing `.agents/plugins/marketplace.json`, not the nested plugin folder. This uses the same catalog name; do not register both local and GitHub sources with that name at once.
 
 ## Use hshs
 
@@ -112,7 +112,7 @@ The skill limits retries to avoid losing more detail with each edit. If preserva
 ## Package contents
 
 ```text
-hshs/
+hshs-skill/
 ├── landing/
 ├── .agents/plugins/marketplace.json
 ├── plugins/hshs/.codex-plugin/plugin.json
