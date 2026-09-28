@@ -10,16 +10,7 @@ hshs (绘事后素) is a Codex plugin for natural portrait retouching. The name 
 
 ## What it does
 
-- Cleans up pimples, shaving residue, uneven tone and small patches of rough skin while keeping pores visible.
-- Softens fine lines, including crow’s feet, nasolabial folds and creases below the chin. Deeper folds remain visible so the face keeps its age and expression.
-- Makes small hairline adjustments or fills sparse hair near the temples when requested.
-- Adds a little definition to the jaw or adjusts the waist and body shape when requested.
-- Removes spots or debris from teeth while keeping their natural color, spacing and alignment.
-- Refines lip closure and slight eye or facial asymmetry while preserving expression, gaze and head angle.
-- Adjusts lighting or removes specific background objects when requested.
-- Converts image formats and saves edited versions separately from the original.
-
-By default, hshs applies light skin cleanup. Changes to hair, jaw, body shape or symmetry need a specific request, or a request for the full treatment. Describe what you want in ordinary words, such as “lighter,” “only the chin,” or “a little more definition.”
+hshs gives portraits a more polished, natural look while keeping the person recognizable and the feel of the original photo. Describe the result you want, and it applies a light touch.
 
 ## Requirements
 
