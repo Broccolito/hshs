@@ -25,47 +25,50 @@ A simple invocation applies very light skin cleanup. Hairline, jaw, body and sym
 
 Use a Codex environment with image viewing and image editing tools enabled. This plugin packages editorial instructions; it does not bundle a model, grant image-generation access, or guarantee availability on every account. The built-in tool does not require this plugin to store an API key. Image processing follows the host tool's data handling and usage limits; it is not guaranteed to run entirely on your device.
 
-## Install this plugin
+## Install from GitHub — ask Codex
 
-Unzip the shared folder. In Codex, provide the folder and ask:
+Copy and paste this into Codex:
 
-> Use plugin-creator to register this existing hshs plugin in my personal marketplace without replacing other entries, then install it. The plugin folder is [insert its full path].
+> Install the hshs plugin from https://github.com/Broccolito/hshs. Read its README, add its GitHub marketplace, install hshs@hshs-marketplace, and verify that the plugin is installed and its hshs skill is available. Preserve my other plugins and settings. Tell me if I need to open a new chat.
 
-For a manual installation:
+The repository is public. No repository invitation or GitHub token is required to read it. Installation still requires a Codex version with plugin support and permission to install plugins. Image editing additionally requires image tools in your Codex session; installing this instruction package does not grant those tools.
 
-1. Copy the complete `hshs` folder, including its hidden `.codex-plugin` directory, to `~/plugins/hshs` (on Windows, use the equivalent folder beneath your user profile).
+### Exact installation commands
 
-2. Add the following entry to the `plugins` array in `~/.agents/plugins/marketplace.json`. Preserve all existing entries and the existing marketplace name.
+Codex can run these for you, or you can run them in a terminal:
 
-```json
-{
-  "name": "hshs",
-  "source": { "source": "local", "path": "./plugins/hshs" },
-  "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
-  "category": "Productivity"
-}
+```sh
+codex plugin marketplace add https://github.com/Broccolito/hshs.git
+codex plugin add hshs@hshs-marketplace
+codex plugin list
 ```
 
-If that file does not exist, create it with this complete catalog:
+The catalog is `.agents/plugins/marketplace.json`; it points to `plugins/hshs`. No manual copying or configuration-file editing is needed. If the marketplace is already registered, refresh it with `codex plugin marketplace upgrade hshs-marketplace` before reinstalling the plugin.
 
-```json
-{
-  "name": "personal",
-  "interface": { "displayName": "Personal" },
-  "plugins": [{
-    "name": "hshs",
-    "source": { "source": "local", "path": "./plugins/hshs" },
-    "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
-    "category": "Productivity"
-  }]
-}
+After installation, open a **new Codex chat**, attach a portrait, and invoke **$hshs** (or select **hshs:hshs** from the skill picker). In the CLI, `/skills` opens that picker. If the plugin is absent, restart Codex and check `codex plugin list` for `hshs@hshs-marketplace`. The package does not guarantee a bare `/hshs` command on every client.
+
+If your environment lacks the `codex` command, use a Codex desktop installation with plugin support and ask Codex to install from the URL above. If plugin installation is unavailable or blocked by workspace policy, report that limitation instead of claiming installation succeeded.
+
+### Verify setup
+
+Ask in a new chat:
+
+> Use $hshs. Before editing, confirm you can load its instructions and access an image editing tool. Summarize its rules for natural teeth, background text, lighting, and preserving the original. Do not generate an image yet.
+
+Then attach a photo and ask for a light edit. The original should remain available, and the response should show a separate output and summarize the checks actually performed. A successful plugin installation alone does not prove image-tool access or visual editing quality.
+
+### Update or remove
+
+```sh
+codex plugin marketplace upgrade hshs-marketplace
+codex plugin add hshs@hshs-marketplace
 ```
 
-3. Install from the local Plugins directory in the app, or use `codex plugin add hshs@personal` on a CLI version that supports it. Substitute the actual catalog name if it is not `personal`.
+Start a new chat after updates. To uninstall, run `codex plugin remove hshs@hshs-marketplace`.
 
-4. Start a new chat so the installed skill is available. Restart the app if the local catalog has not appeared.
+### Install from a downloaded copy
 
-Do not overwrite an existing hshs installation without reviewing it. This package does not register itself in a public directory. Anyone receiving the folder can use the installation procedure, subject to their Codex capabilities and workspace policies.
+Unzip or clone the repository, then run `codex plugin marketplace add /absolute/path/to/hshs` followed by `codex plugin add hshs@hshs-marketplace`. The path must be the repository root containing `.agents/plugins/marketplace.json`, not the nested plugin folder. This uses the same catalog name; do not register both local and GitHub sources with that name at once.
 
 ## Invoke it
 
@@ -106,9 +109,10 @@ Correction passes are bounded to avoid repeated degradation. If preservation sti
 
 ```text
 hshs/
-├── .codex-plugin/plugin.json
-├── skills/hshs/SKILL.md
-├── skills/hshs/agents/openai.yaml
+├── .agents/plugins/marketplace.json
+├── plugins/hshs/.codex-plugin/plugin.json
+├── plugins/hshs/skills/hshs/SKILL.md
+├── plugins/hshs/skills/hshs/agents/openai.yaml
 └── README.md
 ```
 
