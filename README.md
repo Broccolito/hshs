@@ -12,7 +12,7 @@ hshs (绘事后素) is a Codex plugin for quiet, natural portrait editing. In th
 
 - Light cleanup of pimples, shaving residuals, patchy tone and temple texture while retaining pores.
 
-- Requested gentle softening of crow’s feet (鱼尾纹), nasolabial folds (法令纹) and fine lines, retaining pronounced folds, expression and natural age.
+- Requested gentle softening of crow’s feet (鱼尾纹), nasolabial folds (法令纹), lower-chin smile creases and fine lines, retaining pronounced folds, expression and natural age.
 - Requested small hairline adjustments and fuller hair near the temples.
 
 - Requested gentle definition of the jaw, lower abdomen and overall silhouette.
