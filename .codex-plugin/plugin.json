@@ -1,0 +1,28 @@
+{
+  "name": "hshs",
+  "version": "0.1.0+codex.20260928214044",
+  "description": "Natural portrait retouching that preserves identity, texture and the original photograph.",
+  "author": {
+    "name": "hshs"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "hshs \u00b7 \u7ed8\u4e8b\u540e\u7d20",
+    "shortDescription": "Beauty comes first. Retouching follows.",
+    "longDescription": "Subtle portrait edits guided by the beauty already present: natural skin, hair, facial balance and requested silhouette refinements, with photographic realism and identity preserved.",
+    "developerName": "hshs",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Lightly retouch this portrait while keeping it natural.",
+      "Refine only the areas I name and preserve my identity."
+    ]
+  },
+  "keywords": [
+    "photography",
+    "portrait",
+    "retouching",
+    "natural",
+    "hshs"
+  ]
+}

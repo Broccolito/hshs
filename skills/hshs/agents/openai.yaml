@@ -1,0 +1,4 @@
+interface:
+  display_name: "hshs · 绘事后素"
+  short_description: "Natural portrait retouching that keeps you, you."
+  default_prompt: "Use $hshs to lightly retouch this portrait while preserving my identity and its natural photographic texture."
