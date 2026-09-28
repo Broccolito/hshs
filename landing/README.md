@@ -16,7 +16,7 @@ Open http://localhost:8765. The page uses relative asset paths so it also works 
 
 ## Images
 
-The examples feature entirely fictional East Asian adults. Each original was independently generated as an already appealing, natural portrait, then edited with hshs guidance. They are illustrative AI-generated demonstrations, not photographs of customers or evidence of guaranteed pixel preservation. No user's private portrait is published.
+The examples feature entirely fictional East Asian adults. Each original was independently generated as an already appealing, natural portrait with modest visible imperfections, then actually edited with hshs guidance. Real-person references informed only broad setting, framing and styling; no screenshot or reference face is included. The replacement pairs use a seated cafe portrait and a car-seat selfie. They are illustrative AI-generated demonstrations, not photographs of customers or evidence of guaranteed pixel preservation. No user's private portrait is published.
 
 `assets/` contains four JPEG display assets and the corresponding generation/edit prompts. Pairs share dimensions and framing. Only format conversion/compression was applied for web delivery, without additional visual retouching. Actual edits may also regenerate fine texture outside the target region; the public page labels the demonstrations accordingly.
 

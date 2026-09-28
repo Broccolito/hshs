@@ -6,13 +6,13 @@
 
 The minimal landing page and fictional East Asian portrait examples live in [`landing/`](landing/).
 
-hshs (绘事后素) is a Codex plugin for quiet, natural portrait editing. In this plugin's interpretation, the person and the original photograph already carry the beauty, and edditing offers a finishing touch; it does not take the credit.
+hshs (绘事后素) is a Codex plugin for quiet, natural portrait editing. In this plugin's interpretation, the person and the original photograph already carry the beauty, and editing offers a finishing touch; it does not take the credit.
 
 ## What it does
 
 - Light cleanup of pimples, shaving residuals, patchy tone and temple texture while retaining pores.
 
-- Requested gentle softening of crow’s feet (鱼尾纹), nasolabial folds (法令纹), lower-chin smile creases and fine lines, retaining pronounced folds, expression and natural age.
+- Requested gentle softening of crow’s feet, nasolabial folds, lower-chin smile creases and fine lines, retaining pronounced folds, expression and natural age.
 - Requested small hairline adjustments and fuller hair near the temples.
 
 - Requested gentle definition of the jaw, lower abdomen and overall silhouette.
@@ -93,6 +93,12 @@ Examples after selecting the skill:
 
 > Only convert this HEIC to JPEG. No retouching.
 
+## Demonstration portraits
+
+The website features new fictional East Asian adults in everyday settings. Reference photographs guide the styling and framing only; they are not edited, reproduced or published as the demo subjects. Each generated original includes modest visible areas for refinement, then receives a separate hshs editing pass. The comparison images contain no captions, logos or screenshot interfaces; labels are added by the website.
+
+The aim is a polished version of the same person. Natural complexion, facial character and eye anatomy stay central. Darker skin is not a flaw: tonal cleanup addresses patchiness, not skin whitening. These examples demonstrate a workflow, not guaranteed pixel-perfect preservation.
+
 ## How it protects the photograph
 
 The workflow inspects the source, edits only the requested areas, compares the result, and retains the original. It asks for visible pores, individual hair strands, plausible anatomy and natural clothing folds. Follow-up edits apply the new change instead of repeatedly processing every feature.
@@ -121,7 +127,7 @@ hshs/
 └── README.md
 ```
 
-No portraits, account credentials, external servers, hooks or background services are bundled. You may share this instruction package; sharing it does not share the photos used to develop it.
+The installable plugin contains no portraits, account credentials, external servers, hooks or background services. The separate landing folder contains only generated fictional portrait demonstrations. You may share this instruction package; sharing it does not share the photos used to develop it.
 
 ## Development and verification
 
