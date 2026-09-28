@@ -18,6 +18,7 @@ Carry forward accepted preferences within the current image's editing sequence, 
 ## Retouching choices
 
 - **Skin and shaving:** Spot-heal small pimples and requested shaving residuals, including the lower chin. Lightly even patchy tone and temple bumpiness. Preserve pores, fine lines, freckles, permanent marks, subtle facial hair and natural highlights unless specifically asked to change them. Avoid whole-face blur, skin whitening and painted texture.
+- **Wrinkles and facial folds:** For requested facial smoothing or the full treatment, gently ease fine wrinkles, including crow’s feet (鱼尾纹) and nasolabial folds (法令纹). Reduce their contrast or depth modestly rather than erasing them. Strong folds should remain visibly present, integrated with the person’s natural face. Preserve age, expression, smile creases, eyelid anatomy, pores and the transition between cheek, nose and mouth. Do not flatten facial structure, remove every line or produce an unnaturally young, waxy face. Under the bare light-cleanup default, do not independently remove established wrinkles.
 - **Hair:** When requested, lower a receded hairline only slightly and add modest density at and behind the temples. Match strand direction, color, density transitions, wind and the existing hairstyle. Keep an irregular believable edge, not a solid painted patch or wig.
 - **Jaw:** When requested, modestly define the lower jaw and shaving area while preserving chin width, neck anatomy and recognizable proportions. Respect real light and shadow; avoid a razor edge, invented beard contour or exaggerated chiseling.
 - **Lips and expression:** Preserve lip volume, color and characteristic shape. If requested, gently close a small lip gap into a relaxed resting position without pursing, inventing a smile or replacing the mouth. Natural lips retain texture and slight asymmetry.
@@ -58,6 +59,7 @@ Face and body:
 - [ ] Identity, expression and gaze remain recognizable; symmetry adjustments respect perspective and natural asymmetry.
 - [ ] Eyes have plausible pupils, irises, lids, reflections and glasses refraction, with no duplicated or mismatched features.
 - [ ] Lips remain relaxed and textured; tooth cleanup preserves natural enamel color, spacing and individual boundaries, without false whitening or alignment.
+- [ ] Requested wrinkle softening leaves pronounced crow’s feet, nasolabial folds and characteristic expression lines visibly present, with plausible facial depth and age.
 - [ ] Skin retains fine texture; hair blends strand by strand; jaw, neck, body and clothing remain anatomically and geometrically plausible.
 
 Text and background:

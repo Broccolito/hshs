@@ -2,12 +2,17 @@
 
 **Beauty comes first. Retouching follows.**
 
+[Explore the before-and-after demonstrations →](https://broccolito.github.io/hshs/)
+
+The minimal landing page and fictional East Asian portrait examples live in [`landing/`](landing/).
+
 hshs (绘事后素) is a Codex plugin for quiet, natural portrait editing. In this plugin's interpretation, the person and the original photograph already carry the beauty, and edditing offers a finishing touch; it does not take the credit.
 
 ## What it does
 
 - Light cleanup of pimples, shaving residuals, patchy tone and temple texture while retaining pores.
 
+- Requested gentle softening of crow’s feet (鱼尾纹), nasolabial folds (法令纹) and fine lines, retaining pronounced folds, expression and natural age.
 - Requested small hairline adjustments and fuller hair near the temples.
 
 - Requested gentle definition of the jaw, lower abdomen and overall silhouette.
