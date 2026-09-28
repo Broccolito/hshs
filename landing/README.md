@@ -2,7 +2,7 @@
 
 Public URL: https://broccolito.github.io/hshs/
 
-A minimal, static page with two before/after image sliders, restrained reveal animation and a copyable Codex installation prompt. No framework, tracking, cookies, remote fonts or build dependencies. GitHub Pages is the requested host; this folder is the complete publishable site.
+This folder contains the GitHub Pages website: two before-and-after sliders, simple fade-in animations and an installation prompt users can copy into Codex. It uses plain HTML, CSS and JavaScript, with no build step, tracking, cookies or remote fonts.
 
 ## Local preview
 
@@ -16,9 +16,9 @@ Open http://localhost:8765. The page uses relative asset paths so it also works 
 
 ## Images
 
-The examples feature entirely fictional East Asian adults. Each original was independently generated as an already appealing, natural portrait with modest visible imperfections, then actually edited with hshs guidance. Real-person references informed only broad setting, framing and styling; no screenshot or reference face is included. The replacement pairs use a seated cafe portrait and a car-seat selfie. They are illustrative AI-generated demonstrations, not photographs of customers or evidence of guaranteed pixel preservation. No user's private portrait is published.
+The examples feature entirely fictional East Asian adults. Each original was generated as a natural portrait with a few everyday skin or grooming details, then edited separately using hshs. Real-person references informed only broad setting, framing and styling; no screenshot or reference face is included. The two pairs show a seated cafe portrait and a selfie taken in a car. The page identifies them as AI-generated examples. They do not show customers, and the edits do not preserve every pixel. No user's private portrait is published.
 
-`assets/` contains four JPEG display assets and the corresponding generation/edit prompts. Pairs share dimensions and framing. Only format conversion/compression was applied for web delivery, without additional visual retouching. Actual edits may also regenerate fine texture outside the target region; the public page labels the demonstrations accordingly.
+`assets/` contains four JPEG display assets and the corresponding generation/edit prompts. Pairs share dimensions and framing. Only format conversion/compression was applied for web delivery, without additional visual retouching. Generative editing can change fine texture outside the requested area, even when the overall photo looks similar.
 
 ## Interaction and accessibility
 

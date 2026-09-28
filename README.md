@@ -4,33 +4,28 @@
 
 [Explore the before-and-after demonstrations →](https://broccolito.github.io/hshs/)
 
-The minimal landing page and fictional East Asian portrait examples live in [`landing/`](landing/).
+The website and fictional East Asian portrait examples are in [`landing/`](landing/).
 
-hshs (绘事后素) is a Codex plugin for quiet, natural portrait editing. In this plugin's interpretation, the person and the original photograph already carry the beauty, and editing offers a finishing touch; it does not take the credit.
+hshs (绘事后素) is a Codex plugin for natural portrait retouching. The name reflects a simple idea: a good portrait starts with the person in it. Editing should preserve that person’s appearance and the feel of the original photo.
 
 ## What it does
 
-- Light cleanup of pimples, shaving residuals, patchy tone and temple texture while retaining pores.
+- Cleans up pimples, shaving residue, uneven tone and small patches of rough skin while keeping pores visible.
+- Softens fine lines, including crow’s feet, nasolabial folds and creases below the chin. Deeper folds remain visible so the face keeps its age and expression.
+- Makes small hairline adjustments or fills sparse hair near the temples when requested.
+- Adds a little definition to the jaw or adjusts the waist and body shape when requested.
+- Removes spots or debris from teeth while keeping their natural color, spacing and alignment.
+- Refines lip closure and slight eye or facial asymmetry while preserving expression, gaze and head angle.
+- Adjusts lighting or removes specific background objects when requested.
+- Converts image formats and saves edited versions separately from the original.
 
-- Requested gentle softening of crow’s feet, nasolabial folds, lower-chin smile creases and fine lines, retaining pronounced folds, expression and natural age.
-- Requested small hairline adjustments and fuller hair near the temples.
-
-- Requested gentle definition of the jaw, lower abdomen and overall silhouette.
-
-- Tooth cleanup that removes unwanted spots or debris while preserving natural enamel color, spacing and alignment—no artificial whitening or veneers.
-- Natural lips and relaxed mouth closure; careful, slight eye and facial symmetry adjustments that preserve expression and perspective.
-
-- Optional restrained cinematic lighting and removal of specifically named background objects.
-
-- Non-destructive image conversion and versioned exports.
-
-A simple invocation applies very light skin cleanup. Hairline, jaw, body and symmetry changes require a request, or an explicit request for the full treatment. There is no beauty score or numerical strength scale. Say “lighter,” “only the chin,” or “a little more definition.”
+By default, hshs applies light skin cleanup. Changes to hair, jaw, body shape or symmetry need a specific request, or a request for the full treatment. Describe what you want in ordinary words, such as “lighter,” “only the chin,” or “a little more definition.”
 
 ## Requirements
 
 Use a Codex environment with image viewing and image editing tools enabled. This plugin packages editorial instructions; it does not bundle a model, grant image-generation access, or guarantee availability on every account. The built-in tool does not require this plugin to store an API key. Image processing follows the host tool's data handling and usage limits; it is not guaranteed to run entirely on your device.
 
-## Install from GitHub — ask Codex
+## Install from GitHub
 
 Copy and paste this into Codex:
 
@@ -75,11 +70,9 @@ Start a new chat after updates. To uninstall, run `codex plugin remove hshs@hshs
 
 Unzip or clone the repository, then run `codex plugin marketplace add /absolute/path/to/hshs` followed by `codex plugin add hshs@hshs-marketplace`. The path must be the repository root containing `.agents/plugins/marketplace.json`, not the nested plugin folder. This uses the same catalog name; do not register both local and GitHub sources with that name at once.
 
-## Invoke it
+## Use hshs
 
-In Codex CLI or IDE, use the documented slash entry point **`/skills`**, select **hshs**, and attach the image. Or invoke it directly with **`$hshs`**. A plugin skill may be displayed under its namespace as `hshs:hshs`; select that entry if shown. In a UI with a plugin/skill mention picker, search for hshs there.
-
-A universal bare `/hshs` alias is not guaranteed by Codex's documented skill interface. The plugin provides one reusable hshs workflow without relying on an unsupported custom-command mechanism.
+Attach a photo in a new Codex chat and type `$hshs`, or select `hshs:hshs` from the skill picker. In the CLI, `/skills` opens the picker.
 
 Examples after selecting the skill:
 
@@ -95,9 +88,9 @@ Examples after selecting the skill:
 
 ## Demonstration portraits
 
-The website features new fictional East Asian adults in everyday settings. Reference photographs guide the styling and framing only; they are not edited, reproduced or published as the demo subjects. Each generated original includes modest visible areas for refinement, then receives a separate hshs editing pass. The comparison images contain no captions, logos or screenshot interfaces; labels are added by the website.
+The website features new fictional East Asian adults in everyday settings. Reference photographs guide the styling and framing only; they are not edited, reproduced or published as the demo subjects. Each original is generated with a few everyday skin or grooming details, then edited separately using hshs. The comparison images contain no captions, logos or screenshot interfaces; labels are added by the website.
 
-The aim is a polished version of the same person. Natural complexion, facial character and eye anatomy stay central. Darker skin is not a flaw: tonal cleanup addresses patchiness, not skin whitening. These examples demonstrate a workflow, not guaranteed pixel-perfect preservation.
+The edits should preserve the person’s complexion, facial features and eye shape. Darker skin is not a flaw: tonal cleanup addresses patchiness, not skin whitening. These examples demonstrate a workflow, not guaranteed pixel-perfect preservation.
 
 ## How it protects the photograph
 
@@ -105,7 +98,7 @@ The workflow inspects the source, edits only the requested areas, compares the r
 
 Generative editing can change unintended details or output a smaller image. The workflow checks for these issues and reports material limitations; it cannot guarantee unchanged pixels, full source resolution, perfect identity preservation or undetectable editing. It does not remove provenance metadata to conceal edits.
 
-## Quality checks in the updated workflow
+## Quality checks
 
 Short checklists cover the edit brief, face and body, background text, lighting, and before/after comparison. Each revision is checked against both the untouched original and the last accepted version.
 
@@ -114,12 +107,13 @@ Short checklists cover the edit brief, face and body, background text, lighting,
 - **Light:** Keep the person integrated with the scene. Check light direction, color, exposure and shadows, and reject halos or a separate studio-lit subject effect.
 - **Drift:** Compare untouched regions and overall tone, texture and sharpness. Minor encoding differences are acceptable; broad unintended changes are not. Use aligned difference views when available, without promising unchanged pixels.
 
-Correction passes are bounded to avoid repeated degradation. If preservation still fails, the workflow reports the limitation rather than declaring the image finished. Checks describe what was actually inspected; they do not guarantee tool behavior.
+The skill limits retries to avoid losing more detail with each edit. If preservation still fails, the workflow reports the limitation rather than declaring the image finished. Checks describe what was actually inspected; they do not guarantee tool behavior.
 
 ## Package contents
 
 ```text
 hshs/
+├── landing/
 ├── .agents/plugins/marketplace.json
 ├── plugins/hshs/.codex-plugin/plugin.json
 ├── plugins/hshs/skills/hshs/SKILL.md
